@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20sp"
+            android:textColor="#FFFFFF"
+            android:textSize="102sp"
+            tools:text="30º"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/geography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/temperature"
+            android:layout_marginEnd="45sp"
+            tools:text="Patna, IN"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="48sp"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="169dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="20sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
