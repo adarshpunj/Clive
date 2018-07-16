@@ -66,7 +66,7 @@ public class LocationProcess extends AsyncTask<LocationData,Void,LocationData>{
         String latitude = locationData[0].getmLatitude();
         String longitude = locationData[0].getmLongitude();
         String owmURL = "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+
-                "&lon="+longitude+"&appid=c2675cc27e2d55338119291273f23807";
+                "&lon="+longitude+"&appid=ENTER YOUR KEY HERE";
         try {
             URL url = new URL(owmURL);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
